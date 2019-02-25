@@ -13,9 +13,10 @@ public class Main
 
         Main main = new Main();
 
+        //Getting needed dimensions
         //Circle
 
-        System.out.println("Podaj długość promienia (w cm): ");
+        System.out.println("Enter radius length(cm): ");
         radius = main.getDimension();
 
         figures[0] = new Circle(radius);
@@ -23,35 +24,35 @@ public class Main
         //Triangle
 
         System.out.println();
-        System.out.println("Podaj długość boku A trójkąta(w cm): ");
+        System.out.println("Enter triangle's side A length(cm): ");
         triangleSideA = main.getDimension();
         System.out.println();
-        System.out.println("Podaj długość boku B trójkąta(w cm): ");
+        System.out.println("Enter triangle's side B length(cm): ");
         triangleSideB = main.getDimension();
 
         figures[1] =  new Triangle(triangleSideA, triangleSideB);
 
-        // Rectangle
+        //Rectangle
 
         System.out.println();
-        System.out.println("Podaj długość boku A prostokąta(w cm): ");
+        System.out.println("Enter rectangle's side A length(cm): ");
         rectangleSideA = main.getDimension();
         System.out.println();
-        System.out.println("Podaj długość boku B prostokąta(w cm): ");
+        System.out.println("Enter rectangle's side B length(cm): ");
         rectangleSideB = main.getDimension();
 
         figures[2] = new Rectangle(rectangleSideA, rectangleSideB);
 
 
+        //Print the results
+        
         for (Figure figure: figures)
         {
             System.out.println(figure.getType());
-            System.out.println("Obwód: " + figure.getPerimeter());
-            System.out.println("Pole: " + figure.getArea());
+            System.out.println("Perimeter: " + figure.getPerimeter());
+            System.out.println("Area: " + figure.getArea());
 
         }
-
-
     }
 
 
