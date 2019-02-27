@@ -5,7 +5,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.util.Scanner;
 
 public class Main extends JFrame
 {
@@ -26,13 +25,13 @@ public class Main extends JFrame
         circleFigurePanel.add(circleImg);
         circleEquationPanel.add(new JLabel("Enter radius length(cm): "));
 
-        circleEquationPanel.add(dimensionA);
-        JButton calculateButton = new JButton("Calculate");
-        circleEquationPanel.add(calculateButton);
-        circleResultPanel.add(resultPerimeter);
-        circleResultPanel.add(resultArea);
+        circleEquationPanel.add(radiusDimension);
+        circleEquationPanel.add(new JLabel("As a separator please use '.' not ','."));
+        circleEquationPanel.add(circleCalculateButton);
+        circleResultPanel.add(circleResultPerimeter);
+        circleResultPanel.add(circleResultArea);
 
-        calculateButton.addActionListener(new ActionListener() {
+        circleCalculateButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e)
             {
@@ -42,25 +41,25 @@ public class Main extends JFrame
 
                 try
                 {
-                    double radius = Double.parseDouble(dimensionA.getText());
+                    double radius = Double.parseDouble(radiusDimension.getText());
                     Figure circle = new Circle(radius);
-                    resultPerimeter.setText("Perimeter = " + circle.getPerimeter() + " cm2");
-                    resultArea.setText("Area = " + circle.getArea() + " cm2");
-                    errorLabel.setText("");
+                    circleResultPerimeter.setText("Perimeter = " + circle.getPerimeter() + " cm2");
+                    circleResultArea.setText("Area = " + circle.getArea() + " cm2");
+                    circleErrorLabel.setText("");
                 }
                 catch(NumberFormatException err)
                 {
-                    circleResultPanel.add(errorLabel);
-                    resultArea.setText("");
-                    resultPerimeter.setText("");
-                    errorLabel.setText("This is not a number!");
+                    circleResultPanel.add(circleErrorLabel);
+                    circleResultArea.setText("");
+                    circleResultPerimeter.setText("");
+                    circleErrorLabel.setText("This is not a number!");
 
                 }
 
             }
         });
 
-        dimensionA.addKeyListener(new KeyAdapter() {
+        radiusDimension.addKeyListener(new KeyAdapter() {
             @Override
             public void keyReleased(KeyEvent e) {
                 super.keyReleased(e);
@@ -69,18 +68,18 @@ public class Main extends JFrame
                 {
                     try
                     {
-                        double radius = Double.parseDouble(dimensionA.getText());
+                        double radius = Double.parseDouble(radiusDimension.getText());
                         Figure circle = new Circle(radius);
-                        resultPerimeter.setText("Perimeter = " + circle.getPerimeter() + " cm2");
-                        resultArea.setText("Area = " + circle.getArea() + " cm2");
-                        errorLabel.setText("");
+                        circleResultPerimeter.setText("Perimeter = " + circle.getPerimeter() + " cm2");
+                        circleResultArea.setText("Area = " + circle.getArea() + " cm2");
+                        circleErrorLabel.setText("");
                     }
                     catch(NumberFormatException err)
                     {
-                        circleResultPanel.add(errorLabel);
-                        resultArea.setText("");
-                        resultPerimeter.setText("");
-                        errorLabel.setText("This is not a number!");
+                        circleResultPanel.add(circleErrorLabel);
+                        circleResultArea.setText("");
+                        circleResultPerimeter.setText("");
+                        circleErrorLabel.setText("This is not a number!");
 
                     }
                 }
@@ -91,13 +90,144 @@ public class Main extends JFrame
 
         tabbedPane.addTab("Triangle", triangleMainSplit);
 
+        trinagleFigurePanel.add(triangleImg);
+
+        trinagleEquationPanel.add(new JLabel("Enter side A length: "));
+        trinagleEquationPanel.add(triangleDimensionA);
+        trinagleEquationPanel.add(new JLabel("Enter side B/height length: "));
+        trinagleEquationPanel.add(triangleDimensionB);
+        trinagleEquationPanel.add(new JLabel("As a separator please use '.' not ','."));
+        trinagleEquationPanel.add(triangleCalculateButton);
+
+        trinagleResultPanel.add(triangleResultPerimeter);
+        trinagleResultPanel.add(triangleResultArea);
+
+        triangleCalculateButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                // Avoid entering something else besides a number.
+                try
+                {
+                    double triangleSideA = Double.parseDouble(triangleDimensionA.getText());
+                    double triangleSideB = Double.parseDouble(triangleDimensionB.getText());
+                    Figure triangle = new Triangle(triangleSideA, triangleSideB);
+                    triangleResultPerimeter.setText("Perimeter = " + triangle.getPerimeter() + " cm2");
+                    triangleResultArea.setText("Area = " + triangle.getArea() + " cm2");
+                    triangleErrorLabel.setText("");
+                }
+                catch(NumberFormatException err)
+                {
+                    trinagleResultPanel.add(triangleErrorLabel);
+                    triangleResultPerimeter.setText("");
+                    triangleResultArea.setText("");
+                    triangleErrorLabel.setText("This is not a number!");
+
+                }
+
+            }
+        });
+
+        triangleDimensionB.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyReleased(KeyEvent e) {
+                super.keyReleased(e);
+
+                if (e.getKeyCode()==KeyEvent.VK_ENTER)
+                {
+                    try
+                    {
+                        double triangleSideA = Double.parseDouble(triangleDimensionA.getText());
+                        double triangleSideB = Double.parseDouble(triangleDimensionB.getText());
+                        Figure triangle = new Triangle(triangleSideA, triangleSideB);
+                        triangleResultPerimeter.setText("Perimeter = " + triangle.getPerimeter() + " cm2");
+                        triangleResultArea.setText("Area = " + triangle.getArea() + " cm2");
+                        triangleErrorLabel.setText("");
+                    }
+                    catch(NumberFormatException err)
+                    {
+                        trinagleResultPanel.add(triangleErrorLabel);
+                        triangleResultPerimeter.setText("");
+                        triangleResultArea.setText("");
+                        circleErrorLabel.setText("This is not a number!");
+
+                    }
+                }
+            }
+        });
+
 
 
         // Rectangle Tab
 
         tabbedPane.addTab("Rectangle", rectangleMainSplit);
 
-        
+        rectangleFigurePanel.add(rectangleImg);
+
+        rectangleEquationPanel.add(new JLabel("Enter side A length: "));
+        rectangleEquationPanel.add(rectangleDimensionA);
+        rectangleEquationPanel.add(new JLabel("Enter side B length: "));
+        rectangleEquationPanel.add(rectangleDimensionB);
+        rectangleEquationPanel.add(new JLabel("As a separator please use '.' not ','."));
+        rectangleEquationPanel.add(rectangleCalculateButton);
+
+        rectangleResultPanel.add(rectangleResultPerimeter);
+        rectangleResultPanel.add(rectangleResultArea);
+
+        rectangleCalculateButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                // Avoid entering something else besides a number.
+                try
+                {
+                    double rectangleSideA = Double.parseDouble(rectangleDimensionA.getText());
+                    double rectangleSideB = Double.parseDouble(rectangleDimensionB.getText());
+                    Figure rectangle = new Rectangle(rectangleSideA, rectangleSideB);
+                    rectangleResultPerimeter.setText("Perimeter = " + rectangle.getPerimeter() + " cm2");
+                    rectangleResultArea.setText("Area = " + rectangle.getArea() + " cm2");
+                    rectangleErrorLabel.setText("");
+                }
+                catch(NumberFormatException err)
+                {
+                    rectangleResultPanel.add(rectangleErrorLabel);
+                    rectangleResultPerimeter.setText("");
+                    rectangleResultArea.setText("");
+                    rectangleErrorLabel.setText("This is not a number!");
+
+                }
+
+            }
+        });
+
+        rectangleDimensionB.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyReleased(KeyEvent e) {
+                super.keyReleased(e);
+
+                if (e.getKeyCode()==KeyEvent.VK_ENTER)
+                {
+                    try
+                    {
+                        double rectangleSideA = Double.parseDouble(rectangleDimensionA.getText());
+                        double rectangleSideB = Double.parseDouble(rectangleDimensionB.getText());
+                        Figure rectangle = new Rectangle(rectangleSideA, rectangleSideB);
+                        rectangleResultPerimeter.setText("Perimeter = " + rectangle.getPerimeter() + " cm2");
+                        rectangleResultArea.setText("Area = " + rectangle.getArea() + " cm2");
+                        rectangleErrorLabel.setText("");
+                    }
+                    catch(NumberFormatException err)
+                    {
+                        rectangleResultPanel.add(rectangleErrorLabel);
+                        rectangleResultPerimeter.setText("");
+                        rectangleResultArea.setText("");
+                        rectangleErrorLabel.setText("This is not a number!");
+
+                    }
+                }
+            }
+        });
+
 
         tabbedPane.setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT);
         this.getContentPane().add(tabbedPane);
@@ -116,15 +246,34 @@ public class Main extends JFrame
     private JPanel rectangleEquationPanel = new JPanel();
     private JPanel rectangleResultPanel = new JPanel();
 
-    final JTextField dimensionA = new JTextField(7);
-    final JTextField dimensionB = new JTextField(7);
+    private JTextField radiusDimension = new JTextField(7);
+
+    private JTextField triangleDimensionA = new JTextField(7);
+    private JTextField triangleDimensionB = new JTextField(7);
+
+    private JTextField rectangleDimensionA = new JTextField(7);
+    private JTextField rectangleDimensionB = new JTextField(7);
+
+    private JButton circleCalculateButton = new JButton("Calculate");
+    private JButton triangleCalculateButton = new JButton("Calculate");
+    private JButton rectangleCalculateButton = new JButton("Calculate");
+
 
     private JLabel circleImg = new JLabel(new ImageIcon("Circle.png"));
     private JLabel triangleImg = new JLabel(new ImageIcon("Triangle.png"));
     private JLabel rectangleImg = new JLabel(new ImageIcon("Rectangle.png"));
-    private JLabel resultPerimeter = new JLabel();
-    private JLabel resultArea = new JLabel();
-    private JLabel errorLabel = new JLabel();
+
+    private JLabel circleResultPerimeter = new JLabel();
+    private JLabel circleResultArea = new JLabel();
+    private JLabel circleErrorLabel = new JLabel();
+
+    private JLabel triangleResultPerimeter = new JLabel();
+    private JLabel triangleResultArea = new JLabel();
+    private JLabel triangleErrorLabel = new JLabel();
+
+    private JLabel rectangleResultPerimeter = new JLabel();
+    private JLabel rectangleResultArea = new JLabel();
+    private JLabel rectangleErrorLabel = new JLabel();
 
     private JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.LEFT);
 
@@ -140,64 +289,7 @@ public class Main extends JFrame
 
     public static void main(String[] args)
     {
-//        double radius;
-//        double triangleSideA, triangleSideB;
-//        double rectangleSideA, rectangleSideB;
-//        Figure[] figures = new Figure[3];
-//
-//        Main main = new Main();
-//
-//        //Getting needed dimensions
-//        //Circle
-//
-//        System.out.println("Enter radius length(cm): ");
-//        radius = main.getDimension();
-//
-//        figures[0] = new Circle(radius);
-//
-//        //Triangle
-//
-//        System.out.println();
-//        System.out.println("Enter triangle's side A length(cm): ");
-//        triangleSideA = main.getDimension();
-//        System.out.println();
-//        System.out.println("Enter triangle's side B length(cm): ");
-//        triangleSideB = main.getDimension();
-//
-//        figures[1] =  new Triangle(triangleSideA, triangleSideB);
-//
-//        //Rectangle
-//
-//        System.out.println();
-//        System.out.println("Enter rectangle's side A length(cm): ");
-//        rectangleSideA = main.getDimension();
-//        System.out.println();
-//        System.out.println("Enter rectangle's side B length(cm): ");
-//        rectangleSideB = main.getDimension();
-//
-//        figures[2] = new Rectangle(rectangleSideA, rectangleSideB);
-//
-//
-//        //Print the results
-//
-//        for (Figure figure: figures)
-//        {
-//            System.out.println(figure.getType());
-//            System.out.println("Perimeter: " + figure.getPerimeter());
-//            System.out.println("Area: " + figure.getArea());
-//
-//        }
-
-
         new Main().setVisible(true);
-    }
-
-
-    public double getDimension()
-    {
-        Scanner scanner = new Scanner(System.in);
-        double dimension = scanner.nextDouble();
-        return dimension;
     }
 
 }
