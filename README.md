@@ -35,4 +35,6 @@ Project is: _in progress.
 Project inspired by some exercises from [@samouczekprogramisty](https://www.samouczekprogramisty.pl/zestaw-cwiczen-dla-poczatkujacych-programistow/)
 
 ## Contact
-Created by [@ftsobczak](ft.sobczak@gmail.com) - feel free to contact me!
+Created by @ftsobczak - feel free to contact me!
+<br>
+ft.sobczak@gmail.com
