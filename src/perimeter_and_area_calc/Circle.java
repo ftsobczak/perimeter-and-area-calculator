@@ -1,21 +1,27 @@
 package perimeter_and_area_calc;
+/**
+ * Class <code>Circle</code> has two methods which calculates the perimeter and area of circle.
+ */
+
 
 public class Circle implements Figure
 {
-    double radius;
-    double perimeter;
-    double area;
-    final double PI = Math.PI;
+    private double radius;
+    private final double PI = Math.PI;
 
     public Circle(double radius)
     {
         this.radius = radius;
     }
 
+    /**
+     *
+     * @return the perimeter of circle.
+     */
     @Override
     public double getPerimeter()
     {
-        perimeter = 2*PI*radius;
+        double perimeter = 2 * PI * radius;
         perimeter *= 100;
         perimeter = Math.round(perimeter);
         perimeter /= 100;
@@ -23,21 +29,18 @@ public class Circle implements Figure
         return perimeter;
     }
 
+    /**
+     *
+     * @return the area of circle.
+     */
     @Override
     public double getArea()
     {
-        area = PI*Math.pow(radius,2);
+        double area = PI * Math.pow(radius, 2);
         area *= 100;
         area = Math.round(area);
         area /= 100;
 
         return area;
     }
-
-    @Override
-    public String getType() {
-        return "Circle";
-    }
-
-
 }

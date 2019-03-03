@@ -1,11 +1,13 @@
 package perimeter_and_area_calc;
 
+/**
+ * Class <code>Rectangle</code> has two methods which calculates the perimeter and area of rectangle.
+ */
+
 public class Rectangle implements Figure
 {
-    double sideA;
-    double sideB;
-    double perimeter;
-    double area;
+    private double sideA;
+    private double sideB;
 
     public Rectangle(double sideA, double sideB)
     {
@@ -13,30 +15,31 @@ public class Rectangle implements Figure
         this.sideB = sideB;
     }
 
+    /**
+     *
+     * @return the perimeter of rectangle.
+     */
     @Override
     public double getPerimeter()
     {
-        perimeter = 2*sideA + 2*sideB;
+        double perimeter = 2 * sideA + 2 * sideB;
         perimeter *= 100;
         perimeter = Math.round(perimeter);
         perimeter /= 100;
         return perimeter;
     }
 
+    /**
+     *
+     * @return the area of rectangle.
+     */
     @Override
     public double getArea()
     {
-        area = sideA*sideB;
+        double area = sideA * sideB;
         area *= 100;
         area = Math.round(area);
         area /= 100;
         return area;
     }
-
-    @Override
-    public String getType() {
-        return "Rectangle";
-    }
-
-
 }

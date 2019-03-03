@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b27ffdfa-6ddd-476c-8b75-5fcd808d194e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/perimeter_and_area_calc/CircleTab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/perimeter_and_area_calc/RectangleTab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/perimeter_and_area_calc/TriangleTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Circle.png" beforeDir="false" afterPath="$PROJECT_DIR$/Circle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rectangle.png" beforeDir="false" afterPath="$PROJECT_DIR$/Rectangle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Triangle.png" beforeDir="false" afterPath="$PROJECT_DIR$/Triangle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/perimeter_and_area_calc/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/perimeter_and_area_calc/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/perimeter_and_area_calc/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/perimeter_and_area_calc/Figure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/perimeter_and_area_calc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/perimeter_and_area_calc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/perimeter_and_area_calc/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/perimeter_and_area_calc/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/perimeter_and_area_calc/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/perimeter_and_area_calc/Triangle.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,22 +30,23 @@
     <session id="-2128494485">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="6" />
-          <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="13" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2685" />
+          <entry key="JAVA" value="6291" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -39,21 +54,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="34">
+              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/RectangleTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="62" column="12" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#279#280#0" expanded="true" />
-                <element signature="e#311#312#0" expanded="true" />
-                <element signature="e#4738#5946#0" expanded="true" />
-                <element signature="e#5945#5946#0" expanded="true" />
-                <element signature="e#7723#8931#0" expanded="true" />
-                <element signature="e#8930#8931#0" expanded="true" />
-                <element signature="e#12065#12066#0" expanded="true" />
-                <element signature="e#12108#12109#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/TriangleTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/CircleTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/Figure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="85">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -71,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/Rectangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="-212">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -80,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="357">
+              <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -89,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/Circle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="32" selection-start-column="32" selection-end-column="32" />
+            <state relative-caret-position="255">
+              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -100,6 +140,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -115,14 +156,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/perimeter_and_area_calc/Circle.java" />
-        <option value="$PROJECT_DIR$/src/perimeter_and_area_calc/Triangle.java" />
-        <option value="$PROJECT_DIR$/src/perimeter_and_area_calc/Rectangle.java" />
-        <option value="$PROJECT_DIR$/src/perimeter_and_area_calc/Figure.java" />
         <option value="$PROJECT_DIR$/src/perimeter_and_area_calc/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="D:/Nauka programowania/Zakładki/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/perimeter_and_area_calc/Split.java" />
+        <option value="$PROJECT_DIR$/src/perimeter_and_area_calc/Abc.java" />
+        <option value="$PROJECT_DIR$/src/perimeter_and_area_calc/Figure.java" />
+        <option value="$PROJECT_DIR$/src/perimeter_and_area_calc/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/perimeter_and_area_calc/Circle.java" />
+        <option value="$PROJECT_DIR$/src/perimeter_and_area_calc/Triangle.java" />
         <option value="$PROJECT_DIR$/src/perimeter_and_area_calc/Main.java" />
+        <option value="$PROJECT_DIR$/src/perimeter_and_area_calc/RectangleTab.java" />
+        <option value="$PROJECT_DIR$/src/perimeter_and_area_calc/TriangleTab.java" />
+        <option value="$PROJECT_DIR$/src/perimeter_and_area_calc/CircleTab.java" />
       </list>
     </option>
   </component>
@@ -139,6 +185,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,11 +209,11 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551107283597" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551617076808" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="D:/Nauka programowania/Podzielenie paneli" />
   </component>
   <component name="RunDashboard">
@@ -212,7 +259,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.26865673" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.27665246" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -257,33 +304,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#4738#5946#0" expanded="true" />
-            <element signature="e#5945#5946#0" expanded="true" />
-            <element signature="e#7723#8931#0" expanded="true" />
-            <element signature="e#8930#8931#0" expanded="true" />
-            <element signature="e#12065#12066#0" expanded="true" />
-            <element signature="e#12108#12109#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Nauka programowania/Zakładki/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
           <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3299#3300#0" expanded="true" />
-            <element signature="e#3342#3343#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -291,47 +315,79 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#2123#2124#0" expanded="true" />
-            <element signature="e#2159#2160#0" expanded="true" />
-            <element signature="e#2205#2206#0" expanded="true" />
-            <element signature="e#2243#2244#0" expanded="true" />
-            <element signature="e#2292#2293#0" expanded="true" />
-            <element signature="e#2327#2328#0" expanded="true" />
-            <element signature="e#2437#2438#0" expanded="true" />
-            <element signature="e#2480#2481#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/Abc.java" />
+    <entry file="file://D:/Nauka programowania/Lekcja 5 - menadżer GroupLayout/GroupLayout/src/grouplayout/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/Figure.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="85">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/Circle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        <state relative-caret-position="255">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-212">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/RectangleTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="62" column="12" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/TriangleTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/perimeter_and_area_calc/CircleTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
