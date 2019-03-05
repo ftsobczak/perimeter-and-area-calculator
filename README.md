@@ -17,7 +17,7 @@ My purpose to create this app was to practise the knowledge about JSplittedPane,
 * Java
 
 ## Setup
-To run this app clone the repository and run it in your IDE.
+The easiest way to run this application is to clone this repo to your desktop and run it in an IDE.
 
 ## Features
 * In the main branch there is a basic version of this app.
